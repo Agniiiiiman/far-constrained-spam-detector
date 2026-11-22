@@ -1,0 +1,98 @@
+{
+  "selected_model": "TF-IDF + LogisticRegression",
+  "baseline_model": "CountVectorizer + MultinomialNB",
+  "thresholds": {
+    "default": 0.5,
+    "frozen_high_recall": 0.238228,
+    "tuned_high_recall": 0.23012,
+    "conservative_buffer": 0.273752
+  },
+  "constraints": {
+    "val_far_budget": 0.01,
+    "val_buffer_far_budget": 0.005
+  },
+  "validation_metrics": {
+    "selected_model": {
+      "default_0.50": {
+        "threshold": 0.5,
+        "precision": 1.0,
+        "recall": 0.676768,
+        "far": 0.0,
+        "accuracy": 0.958763,
+        "confusion_matrix": {
+          "tn": 677,
+          "fp": 0,
+          "fn": 32,
+          "tp": 67
+        }
+      },
+      "frozen_high_recall_0.238228": {
+        "threshold": 0.238228,
+        "precision": 0.958333,
+        "recall": 0.929293,
+        "far": 0.005908,
+        "accuracy": 0.985825,
+        "confusion_matrix": {
+          "tn": 673,
+          "fp": 4,
+          "fn": 7,
+          "tp": 92
+        }
+      },
+      "tuned_high_recall": {
+        "threshold": 0.23012,
+        "precision": 0.958333,
+        "recall": 0.929293,
+        "far": 0.005908,
+        "accuracy": 0.985825,
+        "confusion_matrix": {
+          "tn": 673,
+          "fp": 4,
+          "fn": 7,
+          "tp": 92
+        }
+      },
+      "conservative_buffer": {
+        "threshold": 0.273752,
+        "precision": 0.977528,
+        "recall": 0.878788,
+        "far": 0.002954,
+        "accuracy": 0.981959,
+        "confusion_matrix": {
+          "tn": 675,
+          "fp": 2,
+          "fn": 12,
+          "tp": 87
+        }
+      }
+    },
+    "baseline_nb": {
+      "default_0.50": {
+        "threshold": 0.5,
+        "precision": 0.967391,
+        "recall": 0.89899,
+        "far": 0.004431,
+        "accuracy": 0.983247,
+        "confusion_matrix": {
+          "tn": 674,
+          "fp": 3,
+          "fn": 10,
+          "tp": 89
+        }
+      },
+      "tuned_under_1pct_far": {
+        "threshold": 0.393372,
+        "precision": 0.967742,
+        "recall": 0.909091,
+        "far": 0.004431,
+        "accuracy": 0.984536,
+        "confusion_matrix": {
+          "tn": 674,
+          "fp": 3,
+          "fn": 9,
+          "tp": 90
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Testing & Linting Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editor & OS Metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
